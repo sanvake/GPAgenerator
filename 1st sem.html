@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st sem subjects</title>
+</head>
+<body>
+    <table>
+        <tr id="1">
+          <th>Sl. No</th>
+          <th>Course Code</th>
+          <th>Subjects</th>
+          <th>No. of Credits</th>
+          <th>CIE</th>
+          <th>SEE</th>
+          <th>Total(CIE+SEE)</th>
+          <th>Grade</th>
+          <th>Grade Point</th>
+        </tr>
+        <tr id="2">
+          <td>1</td>
+          <td name="code">18BSEM101</td>
+          <td>Engineering Mathematics-1</td>
+          <td>3</td>
+          <td><input type="number" name="EmCie" id="EmCie" min="20" max="50"></td>
+          <td><input type="number" name="EmSee" id="EmSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="3">
+          <td>2</td>
+          <td>18SEP102</td>
+          <td>Engineering Physics-Theroy</td>
+          <td>3</td>
+          <td><input type="number" name="EptCie" id="EptCie" min="20" max="50"></td>
+          <td><input type="number" name="EptSee" id="EptSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="4">
+          <td>3</td>
+          <td>18SEP103</td>
+          <td>Engineering Physics-Practical</td>
+          <td>1.5</td>
+          <td><input type="number" name="EppCie" id="EppCie" min="20" max="50"></td>
+          <td><input type="number" name="EppSee" id="EppSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="5">
+          <td>4</td>
+          <td>18ESME104</td>
+          <td>Workshop&Manufacturing Practices</td>
+          <td>3</td>
+          <td><input type="number" name="WmpCie" id="WmpCie" min="20" max="50"></td>
+          <td><input type="number" name="WmpSee" id="WmpSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="6">
+          <td>5</td>
+          <td>18ESEE105</td>
+          <td>Basic Electrical Engineering-Theroy</td>
+          <td>3</td>
+          <td><input type="number" name="BeetCie" id="BeetCie" min="20" max="50"></td>
+          <td><input type="number" name="BeetSee" id="BeetSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="7">
+          <td>6</td>
+          <td>18ESEE106</td>
+          <td>Basic Electrical Engineering-Practical</td>
+          <td>1.5</td>
+          <td><input type="number" name="BeepCie" id="BeepCie" min="20" max="50"></td>
+          <td><input type="number" name="BeepSee" id="BeepSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="8">
+          <td>7</td>
+          <td>18ESEC107</td>
+          <td>Basic Electronics</td>
+          <td>3</td>
+          <td><input type="number" name="BeCie" id="BeCie" min="20" max="50"></td>
+          <td><input type="number" name="BeSee" id="BeSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="9">
+          <td>8</td>
+          <td>18HSPE108</td>
+          <td>Professional English</td>
+          <td>3</td>
+          <td><input type="number" name="PeCie" id="PeCie" min="20" max="50"></td>
+          <td><input type="number" name="PeSee" id="PeSee" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="10">
+          <td>9</td>
+          <td>18MCIP109</td>
+          <td>Induction Program</td>
+          <td>1</td>
+          <td><input type="number" name="IPCie" id="IPCie" min="20" max="50"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="11">
+            <td></td>
+            <td></td>
+            <td>Totals</td>
+            <td>22</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+<button onclick="getOption()"> Check </button>
+
+<p id="demo"></p>
+
+</body>
+<script>
+  function getOption(){
+    
+    var x = document.getElementById("EmCie").value;
+    document.getElementById("demo").innerHTML = x;
+  }
+
+</script>
+
+</html>
