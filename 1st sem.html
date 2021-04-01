@@ -13,7 +13,7 @@
     <title>1st sem subjects</title>
 </head>
 <body>
-    <table>
+    <table align="center">
         <tr id="1">
           <th>Sl. No</th>
           <th>Course Code</th>
@@ -24,6 +24,7 @@
           <th>Total(CIE+SEE)</th>
           <th>Grade</th>
           <th>Grade Point</th>
+          <th>Credit Point</th>
         </tr>
         <tr id="2">
           <td>1</td>
@@ -32,9 +33,10 @@
           <td>3</td>
           <td><input type="number" name="EmCie" id="EmCie" min="20" max="50"></td>
           <td><input type="number" name="EmSee" id="EmSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow0"></td>
+          <td id="g0"></td>
+          <td id="gp0"></td>
+          <td id="cp0"></td>
         </tr>
         <tr id="3">
           <td>2</td>
@@ -43,9 +45,10 @@
           <td>3</td>
           <td><input type="number" name="EptCie" id="EptCie" min="20" max="50"></td>
           <td><input type="number" name="EptSee" id="EptSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow1"></td>
+          <td id="g1"></td>
+          <td id="gp1"></td>
+          <td id="cp1"></td>
         </tr>
         <tr id="4">
           <td>3</td>
@@ -54,9 +57,10 @@
           <td>1.5</td>
           <td><input type="number" name="EppCie" id="EppCie" min="20" max="50"></td>
           <td><input type="number" name="EppSee" id="EppSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow2"></td>
+          <td id="g2"></td>
+          <td id="gp2"></td>
+          <td id="cp2"></td>
         </tr>
         <tr id="5">
           <td>4</td>
@@ -65,9 +69,10 @@
           <td>3</td>
           <td><input type="number" name="WmpCie" id="WmpCie" min="20" max="50"></td>
           <td><input type="number" name="WmpSee" id="WmpSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow3"></td>
+          <td id="g3"></td>
+          <td id="gp3"></td>
+          <td id="cp3"></td>
         </tr>
         <tr id="6">
           <td>5</td>
@@ -76,9 +81,10 @@
           <td>3</td>
           <td><input type="number" name="BeetCie" id="BeetCie" min="20" max="50"></td>
           <td><input type="number" name="BeetSee" id="BeetSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow4"></td>
+          <td id="g4"></td>
+          <td id="gp4"></td>
+          <td id="cp4"></td>
         </tr>
         <tr id="7">
           <td>6</td>
@@ -87,9 +93,10 @@
           <td>1.5</td>
           <td><input type="number" name="BeepCie" id="BeepCie" min="20" max="50"></td>
           <td><input type="number" name="BeepSee" id="BeepSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow5"></td>
+          <td id="g5"></td>
+          <td id="gp5"></td>
+          <td id="cp5"></td>
         </tr>
         <tr id="8">
           <td>7</td>
@@ -98,9 +105,10 @@
           <td>3</td>
           <td><input type="number" name="BeCie" id="BeCie" min="20" max="50"></td>
           <td><input type="number" name="BeSee" id="BeSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow6"></td>
+          <td id="g6"></td>
+          <td id="gp6"></td>
+          <td id="cp6"></td>
         </tr>
         <tr id="9">
           <td>8</td>
@@ -109,9 +117,10 @@
           <td>3</td>
           <td><input type="number" name="PeCie" id="PeCie" min="20" max="50"></td>
           <td><input type="number" name="PeSee" id="PeSee" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow7"></td>
+          <td id="g7"></td>
+          <td id="gp7"></td>
+          <td id="cp7"></td>
         </tr>
         <tr id="10">
           <td>9</td>
@@ -119,34 +128,158 @@
           <td>Induction Program</td>
           <td>1</td>
           <td><input type="number" name="IPCie" id="IPCie" min="20" max="50"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td id="totOfRow8"></td>
+          <td id="totOfRow9"></td>
+          <td id="g8"></td>
+          <td id="gp8"></td>
+          <td id="cp8"></td>
         </tr>
         <tr id="11">
             <td></td>
             <td></td>
             <td>Totals</td>
-            <td>22</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="totOfCol-1">22</td>
+            <td id="totOfCol0"></td>
+            <td id="totOfCol1"></td>
+            <td id="totOfCol2"></td>
+            <td id="totOfCol3"></td>
+            <td id="totOfCol4"></td>
+            <td id="totOfCol5"></td>
         </tr>
     </table>
+<br>
+<br>
+<br>
+<hr>
+<p align="center">
+  Percetage:<p id="per"></p> <br>
+  SGPA: <p id="sgpa"></p> <br>
+  <button onclick="getOption()"> Check </button>
+</p>
 
-<button onclick="getOption()"> Check </button>
-
-<p id="demo"></p>
 
 </body>
 <script>
-  function getOption(){
+  function getOption() {
+    var x=[];
+    var y=[];
+    var z=[];
+    var a=0;
+    var b=[];
+    var c=[];
+    var d=0;
+
+    x[0] = document.getElementById("EmCie").value;
+    x[1] = document.getElementById("EptCie").value;
+    x[2] = document.getElementById("EppCie").value;
+    x[3] = document.getElementById("WmpCie").value;
+    x[4] = document.getElementById("BeetCie").value;
+    x[5] = document.getElementById("BeepCie").value;
+    x[6] = document.getElementById("BeCie").value;
+    x[7] = document.getElementById("PeCie").value;
+    x[8] = document.getElementById("IPCie").value;
+
+    y[0] = document.getElementById("EmSee").value;
+    y[1] = document.getElementById("EptSee").value;
+    y[2] = document.getElementById("EppSee").value;
+    y[3] = document.getElementById("WmpSee").value;
+    y[4] = document.getElementById("BeetSee").value;
+    y[5] = document.getElementById("BeepSee").value;
+    y[6] = document.getElementById("BeSee").value;
+    y[7] = document.getElementById("PeSee").value;
+    y[8] = x[8];
+
+    for (let i = 0; i < x.length; i++) {
+    z[i]=parseFloat(x[i]) + parseFloat(y[i]);
+    a=parseFloat(a+z[i]);
+    }
+
+    document.getElementById("totOfRow0").innerHTML=z[0];
+    document.getElementById("totOfRow1").innerHTML=z[1];
+    document.getElementById("totOfRow2").innerHTML=z[2];
+    document.getElementById("totOfRow3").innerHTML=z[3];
+    document.getElementById("totOfRow4").innerHTML=z[4];
+    document.getElementById("totOfRow5").innerHTML=z[5];
+    document.getElementById("totOfRow6").innerHTML=z[6];
+    document.getElementById("totOfRow7").innerHTML=z[7];
+    document.getElementById("totOfRow8").innerHTML=z[8];
+    document.getElementById("totOfRow9").innerHTML=z[8];
+    document.getElementById("totOfCol2").innerHTML=a;
     
-    var x = document.getElementById("EmCie").value;
-    document.getElementById("demo").innerHTML = x;
+    for (let j = 0; j < z.length; j++) {
+      if(z[j]>=90){
+        b[j]="S";
+      }
+      else if(z[j]>=75){
+        b[j]="A";
+      }
+      else if(z[j]>=60){
+        b[j]="B";
+      }
+      else if(z[j]>=50){
+        b[j]="C";
+      }
+      else if(z[j]>=45){
+        b[j]="D";
+      }
+      else if(z[j]>=40){
+        b[j]="E";
+      }
+      else if(z[j]>0){
+        b[j]="F";
+      }
+    }
+
+    document.getElementById("g0").innerHTML=b[0];
+    document.getElementById("g1").innerHTML=b[1];
+    document.getElementById("g2").innerHTML=b[2];
+    document.getElementById("g3").innerHTML=b[3];
+    document.getElementById("g4").innerHTML=b[4];
+    document.getElementById("g5").innerHTML=b[5];
+    document.getElementById("g6").innerHTML=b[6];
+    document.getElementById("g7").innerHTML=b[7];
+    document.getElementById("g8").innerHTML=b[8];
+
+    for (let k = 0; k < b.length; k++) {
+      if(b[k]=="S")
+        c[k]=parseInt(10);
+      else if(b[k]=="A")
+        c[k]=parseInt(9);
+      else if(b[k]=="B")
+        c[k]=parseInt(8);
+      else if(b[k]=="C")
+        c[k]=parseInt(7);
+      else if(b[k]=="D")
+        c[k]=parseInt(6);
+      else if(b[k]=="E")
+        c[k]=parseInt(5);
+      else if(b[k]=="F")
+        c[k]="Fail";
+
+    }
+
+    document.getElementById("gp0").innerHTML=c[0];
+    document.getElementById("gp1").innerHTML=c[1];
+    document.getElementById("gp2").innerHTML=c[2];
+    document.getElementById("gp3").innerHTML=c[3];
+    document.getElementById("gp4").innerHTML=c[4];
+    document.getElementById("gp5").innerHTML=c[5];
+    document.getElementById("gp6").innerHTML=c[6];
+    document.getElementById("gp7").innerHTML=c[7];
+    document.getElementById("gp8").innerHTML=c[8];
+
+    
+
+    var per=0;
+    var sgpa=0;
+    
+    per = parseFloat(a/c.length);
+    
+    sgpa = 0;
+
+    document.getElementById("per").innerHTML=per;
+    document.getElementById("sgpa").innerHTML=sgpa;
+
   }
 
 </script>
