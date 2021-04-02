@@ -2,10 +2,44 @@
 <html lang="en">
 <head>
     <style>
-        table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        vertical-align: center;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        vertical-align: middle;
+        
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      hr.new {
+        border: 1px solid #4CAF50;
+      }
+      input{
+        background-color: rgb(245, 245, 245);
+        border-radius: 2px;
+      }
+      button{
+        background-color: #4CAF50;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        padding: 12px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      
+        
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +47,8 @@
     <title>1st sem subjects</title>
 </head>
 <body>
-    <table align="center">
+  <br><br><br><br>
+    <table class="center">
         <tr id="1">
           <th>Sl. No</th>
           <th>Course Code</th>
@@ -30,7 +65,7 @@
           <td>1</td>
           <td name="code">18BSEM101</td>
           <td>Engineering Mathematics-1</td>
-          <td>3</td>
+          <td id="noc0">3</td>
           <td><input type="number" name="EmCie" id="EmCie" min="20" max="50"></td>
           <td><input type="number" name="EmSee" id="EmSee" min="20" max="50"></td>
           <td id="totOfRow0"></td>
@@ -42,7 +77,7 @@
           <td>2</td>
           <td>18SEP102</td>
           <td>Engineering Physics-Theroy</td>
-          <td>3</td>
+          <td id="noc1">3</td>
           <td><input type="number" name="EptCie" id="EptCie" min="20" max="50"></td>
           <td><input type="number" name="EptSee" id="EptSee" min="20" max="50"></td>
           <td id="totOfRow1"></td>
@@ -54,7 +89,7 @@
           <td>3</td>
           <td>18SEP103</td>
           <td>Engineering Physics-Practical</td>
-          <td>1.5</td>
+          <td id="noc2">1.5</td>
           <td><input type="number" name="EppCie" id="EppCie" min="20" max="50"></td>
           <td><input type="number" name="EppSee" id="EppSee" min="20" max="50"></td>
           <td id="totOfRow2"></td>
@@ -66,7 +101,7 @@
           <td>4</td>
           <td>18ESME104</td>
           <td>Workshop&Manufacturing Practices</td>
-          <td>3</td>
+          <td id="noc3">3</td>
           <td><input type="number" name="WmpCie" id="WmpCie" min="20" max="50"></td>
           <td><input type="number" name="WmpSee" id="WmpSee" min="20" max="50"></td>
           <td id="totOfRow3"></td>
@@ -78,7 +113,7 @@
           <td>5</td>
           <td>18ESEE105</td>
           <td>Basic Electrical Engineering-Theroy</td>
-          <td>3</td>
+          <td id="noc4">3</td>
           <td><input type="number" name="BeetCie" id="BeetCie" min="20" max="50"></td>
           <td><input type="number" name="BeetSee" id="BeetSee" min="20" max="50"></td>
           <td id="totOfRow4"></td>
@@ -90,7 +125,7 @@
           <td>6</td>
           <td>18ESEE106</td>
           <td>Basic Electrical Engineering-Practical</td>
-          <td>1.5</td>
+          <td id="noc5">1.5</td>
           <td><input type="number" name="BeepCie" id="BeepCie" min="20" max="50"></td>
           <td><input type="number" name="BeepSee" id="BeepSee" min="20" max="50"></td>
           <td id="totOfRow5"></td>
@@ -102,7 +137,7 @@
           <td>7</td>
           <td>18ESEC107</td>
           <td>Basic Electronics</td>
-          <td>3</td>
+          <td id="noc6">3</td>
           <td><input type="number" name="BeCie" id="BeCie" min="20" max="50"></td>
           <td><input type="number" name="BeSee" id="BeSee" min="20" max="50"></td>
           <td id="totOfRow6"></td>
@@ -114,7 +149,7 @@
           <td>8</td>
           <td>18HSPE108</td>
           <td>Professional English</td>
-          <td>3</td>
+          <td id="noc7">3</td>
           <td><input type="number" name="PeCie" id="PeCie" min="20" max="50"></td>
           <td><input type="number" name="PeSee" id="PeSee" min="20" max="50"></td>
           <td id="totOfRow7"></td>
@@ -126,7 +161,7 @@
           <td>9</td>
           <td>18MCIP109</td>
           <td>Induction Program</td>
-          <td>1</td>
+          <td id="noc8">1</td>
           <td><input type="number" name="IPCie" id="IPCie" min="20" max="50"></td>
           <td id="totOfRow8"></td>
           <td id="totOfRow9"></td>
@@ -150,12 +185,17 @@
 <br>
 <br>
 <br>
-<hr>
+<hr class="new" align="center">
 <p align="center">
-  Percetage:<p id="per"></p> <br>
-  SGPA: <p id="sgpa"></p> <br>
-  <button onclick="getOption()"> Check </button>
+  Percetage: <span align="center" id="per"></span> %
 </p>
+<p align="center">
+  SGPA: <span align="center" id="sgpa"></span> GPA
+</p>
+  
+<div align="center">
+    <button onclick="getOption()"> Check </button>
+</div>
 
 
 </body>
@@ -167,7 +207,9 @@
     var a=0;
     var b=[];
     var c=[];
-    var d=0;
+    var d=[];
+    var e=[];
+    var f=0;
 
     x[0] = document.getElementById("EmCie").value;
     x[1] = document.getElementById("EptCie").value;
@@ -254,7 +296,7 @@
       else if(b[k]=="E")
         c[k]=parseInt(5);
       else if(b[k]=="F")
-        c[k]="Fail";
+        c[k]=parseInt(0);
 
     }
 
@@ -268,14 +310,41 @@
     document.getElementById("gp7").innerHTML=c[7];
     document.getElementById("gp8").innerHTML=c[8];
 
+    d[0] = document.getElementById("noc0").innerHTML;
+    d[1] = document.getElementById("noc1").innerHTML;
+    d[2] = document.getElementById("noc2").innerHTML;
+    d[3] = document.getElementById("noc3").innerHTML;
+    d[4] = document.getElementById("noc4").innerHTML;
+    d[5] = document.getElementById("noc5").innerHTML;
+    d[6] = document.getElementById("noc6").innerHTML;
+    d[7] = document.getElementById("noc7").innerHTML;
+    d[8] = document.getElementById("noc8").innerHTML;
     
+    for (let index = 0; index < d.length; index++) {
+      e[index]=d[index]*c[index];
+    }
+
+    for (let i = 0; i < e.length; i++) {
+      f = f + e[i]; 
+    }
+
+    document.getElementById("cp0").innerHTML=e[0];
+    document.getElementById("cp1").innerHTML=e[1];
+    document.getElementById("cp2").innerHTML=e[2];
+    document.getElementById("cp3").innerHTML=e[3];
+    document.getElementById("cp4").innerHTML=e[4];
+    document.getElementById("cp5").innerHTML=e[5];
+    document.getElementById("cp6").innerHTML=e[6];
+    document.getElementById("cp7").innerHTML=e[7];
+    document.getElementById("cp8").innerHTML=e[8];
+
+    document.getElementById("totOfCol5").innerHTML=f;
 
     var per=0;
     var sgpa=0;
     
-    per = parseFloat(a/c.length);
-    
-    sgpa = 0;
+    per = parseFloat(a/c.length).toFixed(3);
+    sgpa = parseFloat(f/document.getElementById("totOfCol-1").innerHTML).toFixed(3);
 
     document.getElementById("per").innerHTML=per;
     document.getElementById("sgpa").innerHTML=sgpa;
