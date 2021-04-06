@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .header {
+            overflow: hidden;
+            background-color: #4CAF50;
+            padding: 20px 20px;
+            color: ivory;
+            font-size: 24px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .button {
+        border-radius: 4px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        color: #4CAF50;
+        font-size:24px;
+        font-weight: bold;
+        padding: 12px 24px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        /*set properties for button*/
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header"><button class="button" onclick="location.href='gpa.html'">
+        GPA Generator</button>
+    </header>
+    <table>
+        <tr>
+            <td>hey</td>
+            <td id="how0">how</td>
+            <td>are</td>
+            <td>you</td>
+        </tr>
+        <tr>
+            <td>im</td>
+            <td id="how1">fine</td>
+            <td>thank</td>
+            <td>you</td>
+        </tr>
+    </table>
+    <p id="demo"></p>
+</body>
+<script>
+    const nos=2;
+    var x=new Array(nos);
+    console.log(x.length);
+
+    for (let i = 0; i < x.length; i++) {
+        let p="how";
+        let q=i;
+        console.log(p.concat(i));
+        console.log(q);
+    }
+
+</script>
+</html>
+
+
