@@ -230,7 +230,7 @@
           <td>Kannada</td>
           <td id="noc7">1</td>
           <td><input type="number" name="cie7" id="cie7" min="20" max="50"></td>
-          <td><input type="number" name="see7" id="see7" min="20" max="50"></td>
+          <td id="see7"></td>
           <td id="totOfRow7"></td>
           <td id="g7"></td>
           <td id="gp7"></td>
@@ -280,7 +280,7 @@
 </body>
 <script>
   function getOption() {
-    const nos=8;
+    const nos=7;
     var x=new Array(nos);
     var y=new Array(nos);
     var z=[];
@@ -292,7 +292,7 @@
     var f=0;
     var totCreds=0;
 
-    for (let i = 0; i <= nos; i++) {
+    for (let i = 0; i < 9; i++) {
         let p="noc";
         totCreds+= parseFloat(document.getElementById(p.concat(i)).innerHTML); 
     }
@@ -308,6 +308,10 @@
         y[i]=document.getElementById(q.concat(i)).value;
     }
 
+    x[7]=document.getElementById("cie7").value;
+    y[7]=x[7];
+    document.getElementById("see7").innerHTML=y[7];
+    
     x[8]=document.getElementById("cie8").value;
     y[8]=x[8];
     document.getElementById("see8").innerHTML=y[8];
