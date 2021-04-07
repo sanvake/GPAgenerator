@@ -280,7 +280,7 @@
     var f=0;
     var totCreds=0;
 
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 8; i++) {
         let p="noc";
         totCreds+= parseFloat(document.getElementById(p.concat(i)).innerHTML); 
     }
@@ -299,7 +299,6 @@
     x[7]=document.getElementById("cie7").value;
     y[7]=x[7];
     document.getElementById("see7").innerHTML=y[7];
-
     for (let i = 0; i < x.length; i++) {
     z[i]=parseFloat(x[i]) + parseFloat(y[i]);
     a=parseFloat(a+z[i]);
