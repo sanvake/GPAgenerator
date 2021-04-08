@@ -15,7 +15,7 @@ change number of subjects
 currently this static website works only for mech branch
 
 
-To check your GPA (mech branch) can visit the following link:https://raw.githack.com/ChinmayAnandS/GPAgenerator/main/MainGpa.html
+To check your GPA (mech branch) can visit the following [link](https://chinmayanands.github.io/GPAgenerator/)
 
 
 test.html exists only for test purposes
