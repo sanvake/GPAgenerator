@@ -1,3 +1,22 @@
+html{
+    scroll-behavior: smooth;/*sets the scroll behavior to smooth-->*/
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    vertical-align: middle;
+    /*defines border,text allignment,font family and vertically aligns the content to middle of the table*/
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    /*class to center table and table content*/
+  }
+  hr.new {
+    border: 1px solid #4CAF50;/*sets the hr to the mentioned colour*/
+  }
 body{
     margin: 0;
 }
