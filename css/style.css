@@ -11,6 +11,9 @@ td {
   vertical-align: middle;
   /*defines border,text allignment,font family and vertically aligns the content to middle of the table*/
 }
+.wrapper{
+  overflow: auto;
+}
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -21,13 +24,20 @@ hr.new {
 }
 body {
   margin: 0;
+  height: 100%;
+  position: relative;
 }
 input {
   background-color: rgb(245, 245, 245);
   border-radius: 2px;
   /*provides the background colour and broder to the input button*/
 }
-
+.main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
 .button {
   border-radius: 4px;
   background-color: #ffffff;
@@ -40,6 +50,7 @@ input {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  margin-bottom: 6rem;
   /*set properties for button*/
 }
 
@@ -128,6 +139,8 @@ input {
   width: 200px;
   height: 25px;
 }
+
+
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
   background-color: #4caf50;
@@ -156,6 +169,7 @@ input {
   text-align: left;
   text-transform: none;
   width: 400px;
+  margin-bottom: 1rem;
 }
 #footer div .connect {
   display: block;
